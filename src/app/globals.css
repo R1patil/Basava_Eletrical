@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #0b0f19;      /* Deep background */
+  --bg-card: #1e2640;      /* Content containers */
+  --accent-neon: #00d2ff;  /* Buttons and CTAs */
+  --text-primary: #f3f4f6; /* Main readable text */
+  --text-muted: #9ca3af;   /* Secondary subheaders */
+}
+
+@theme inline {
+  --color-bg-main: var(--bg-main);
+  --color-bg-card: var(--bg-card);
+  --color-accent-neon: var(--accent-neon);
+  --color-text-primary: var(--text-primary);
+  --color-text-muted: var(--text-muted);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0b0f19;
+  color: #f3f4f6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #00d2ff;
+  color: #0b0f19;
+}
+
+/* Subtle industrial neon grid background */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 210, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 210, 255, 0.04) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(0, 210, 255, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}

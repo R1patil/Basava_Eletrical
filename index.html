@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basava Electrician — Professional Electrical Solutions & Contracting</title>
+  <meta name="description" content="Licensed residential & commercial electrical contractor serving Rabakavi Banahatti & Bagalkot region. Specializing in roof slab conduit piping, building wiring, and motor coil rewinding.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Basava Electrician — Professional Electrical Solutions">
+  <meta property="og:description" content="Expert electrical wiring, slab conduit piping, and motor rewinding in Rabakavi Banahatti.">
+  <meta property="og:image" content="img/logo.jpg">
+  
+  <!-- Tailwind CSS v4 Browser Engine -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --font-sans: 'Inter', sans-serif;
+      --font-display: 'Outfit', sans-serif;
+    }
+    body {
+      font-family: var(--font-sans);
+      background-color: #09090b;
+      color: #fafafa;
+    }
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      text-wrap: balance;
+    }
+    /* Vercel Web Interface Guidelines focus & accessibility */
+    :focus-visible {
+      outline: 2px solid #38bdf8;
+      outline-offset: 3px;
+    }
+    /* Custom Glass Panel */
+    .glass-card {
+      background: rgba(18, 18, 22, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card:hover {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-black focus:font-bold focus:rounded-lg shadow-xl">
+    Skip to main content
+  </a>
+
+  <!-- Top Emergency Hotline Bar -->
+  <aside aria-label="Emergency announcement" class="bg-zinc-900 border-b border-zinc-800 text-xs py-2 px-4">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 font-medium text-amber-400">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+        </span>
+        <span>24/7 Emergency Short-Circuit & Power Outage Support</span>
+      </div>
+      <div class="flex items-center gap-4 text-zinc-300">
+        <span>📍 Serving Rabakavi Banahatti &amp; Surrounding Areas</span>
+        <a href="tel:+919876543210" class="font-semibold text-white hover:text-sky-400 transition-colors flex items-center gap-1">
+          📞 Call: +91 98765 43210
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Header Navigation -->
+  <header class="sticky top-0 z-40 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/80 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group" aria-label="Basava Electrician Home">
+        <img src="img/logo.jpg" alt="Basava Electrician Emblem" width="46" height="46" class="w-11 h-11 rounded-full border border-zinc-700 object-cover group-hover:border-zinc-400 transition-colors">
+        <div>
+          <span class="text-base font-bold text-white tracking-tight block">Basava Electrician</span>
+          <span class="text-[10px] uppercase tracking-wider font-semibold text-sky-400 block">Electrical Solutions</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary navigation" class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-300">
+        <a href="#services" class="hover:text-white transition-colors">Services</a>
+        <a href="#portfolio" class="hover:text-white transition-colors">Live Portfolio</a>
+        <a href="#estimator" class="hover:text-white transition-colors">Cost Estimator</a>
+        <a href="#service-area" class="hover:text-white transition-colors">Coverage</a>
+        <a href="#reviews" class="hover:text-white transition-colors">Reviews</a>
+        <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/919876543210?text=Hello%20Basava%20Electrician,%20I%20need%20electrical%20service" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-transform active:scale-95 shadow-md shadow-emerald-950">
+          <span>WhatsApp Chat</span>
+        </a>
+        <a href="tel:+919876543210" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-zinc-200 text-black text-xs font-bold transition-transform active:scale-95 shadow-md shadow-white/10">
+          <span>📞 Call Now</span>
+        </a>
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle Mobile Menu" aria-expanded="false" class="md:hidden p-2 text-zinc-400 hover:text-white cursor-pointer">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-nav" class="hidden md:hidden border-b border-zinc-800 bg-zinc-950 px-4 py-4 space-y-3 text-sm font-medium">
+      <a href="#services" class="block text-zinc-300 hover:text-white py-1">Services</a>
+      <a href="#portfolio" class="block text-zinc-300 hover:text-white py-1">Live Portfolio</a>
+      <a href="#estimator" class="block text-zinc-300 hover:text-white py-1">Cost Estimator</a>
+      <a href="#service-area" class="block text-zinc-300 hover:text-white py-1">Coverage</a>
+      <a href="#reviews" class="block text-zinc-300 hover:text-white py-1">Reviews</a>
+      <a href="#contact" class="block text-zinc-300 hover:text-white py-1">Contact</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden border-b border-zinc-800/60">
+      <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-zinc-700/80 text-xs font-semibold text-zinc-200">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>Government Licensed &amp; Certified Electrician</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1]">
+            Precision Electrical Engineering &amp; Modern Contracting.
+          </h1>
+
+          <p class="text-base sm:text-lg text-zinc-400 leading-relaxed max-w-xl">
+            Serving Rabakavi Banahatti and Bagalkot district. Specialized in residential &amp; commercial roof slab conduit pipe casting, complete building rewiring, and expert copper coil motor rewinding.
+          </p>
+
+          <!-- Dual CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="https://wa.me/919876543210?text=Hi%20Basava,%20I%20would%20like%20to%20get%20a%20quote%20for%20electrical%20work" target="_blank" rel="noopener noreferrer" class="min-h-[48px] px-6 py-3 rounded-xl bg-white hover:bg-zinc-200 text-black font-bold text-sm flex items-center gap-2 shadow-lg shadow-white/10 transition-transform active:scale-95">
+              <span>⚡ Book Site Inspection</span>
+            </a>
+            <a href="#portfolio" class="min-h-[48px] px-6 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-700 font-semibold text-sm flex items-center gap-2 transition-transform active:scale-95">
+              <span>View Past Work Gallery</span>
+            </a>
+          </div>
+
+          <!-- Trust Proof Badges -->
+          <div class="pt-8 grid grid-cols-3 gap-6 border-t border-zinc-800/80">
+            <div>
+              <span class="text-2xl sm:text-3xl font-extrabold text-white font-mono block">500+</span>
+              <span class="text-xs text-zinc-400 font-medium block">Completed Projects</span>
+            </div>
+            <div>
+              <span class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono block">100%</span>
+              <span class="text-xs text-zinc-400 font-medium block">Safety Compliance</span>
+            </div>
+            <div>
+              <span class="text-2xl sm:text-3xl font-extrabold text-sky-400 font-mono block">24/7</span>
+              <span class="text-xs text-zinc-400 font-medium block">Emergency Support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Card (Real Slab Work Photo) -->
+        <div class="lg:col-span-5">
+          <div class="glass-card p-4 rounded-3xl relative shadow-2xl overflow-hidden group">
+            <div class="aspect-4/3 rounded-2xl overflow-hidden bg-zinc-900 relative">
+              <img src="img/work_roof_slab_1.jpeg" alt="Roof slab electrical conduit piping work in Banahatti" width="600" height="450" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-5">
+                <span class="inline-block px-2.5 py-1 rounded-md bg-white text-black text-[11px] font-bold uppercase tracking-wider mb-1 w-max">
+                  Live Jobsite Photo
+                </span>
+                <h3 class="text-lg font-bold text-white">Roof Slab Conduit Layout</h3>
+                <p class="text-xs text-zinc-300">Multi-story building electrical piping before concrete pour</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 max-w-6xl mx-auto px-4 scroll-mt-20">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs uppercase font-bold text-sky-400 tracking-wider block mb-2">What We Specialize In</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Full-Spectrum Electrical Contracting</h2>
+        <p class="text-sm sm:text-base text-zinc-400 mt-3">
+          From ground-breaking utility trenches to complex roof casting and electric motor rewinding.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Service 1: Roof Slab Piping -->
+        <article class="glass-card p-7 rounded-2xl flex flex-col justify-between group transition-transform duration-200 hover:-translate-y-1">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-sky-400 mb-5 text-xl font-bold">
+              🏗️
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Roof Slab Conduit Piping</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed mb-4">
+              Engineered PVC conduit routing across reinforcement rebar before slab casting. Strategic fan hooks, down-drops, and junction placements.
+            </p>
+            <ul class="text-xs text-zinc-300 space-y-2 border-t border-zinc-800/80 pt-4">
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Heavy-duty crack-resistant PVC pipes</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Fan box &amp; light point reinforcement</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Zero blockages guaranteed during concrete pour</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/919876543210?text=Hi%20Basava,%20I%20need%20Roof%20Slab%20Conduit%20Piping" target="_blank" rel="noopener noreferrer" class="mt-6 text-xs font-bold text-sky-400 hover:text-white flex items-center gap-1.5 transition-colors">
+            <span>Inquire for Slab Work →</span>
+          </a>
+        </article>
+
+        <!-- Service 2: Fan & Motor Coil Rewinding -->
+        <article class="glass-card p-7 rounded-2xl flex flex-col justify-between group transition-transform duration-200 hover:-translate-y-1">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-amber-400 mb-5 text-xl font-bold">
+              🔄
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Motor &amp; Fan Coil Rewinding</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed mb-4">
+              High-gauge copper coil rewinding for ceiling fans, cooler motors, and induction pumps. Restores original torque, RPM, and power efficiency.
+            </p>
+            <ul class="text-xs text-zinc-300 space-y-2 border-t border-zinc-800/80 pt-4">
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> 100% Pure Super Enamelled Copper Wire</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Stator varnishing &amp; dynamic insulation</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Capacitor &amp; ball-bearing overhaul</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/919876543210?text=Hi%20Basava,%20I%20need%20Ceiling%20Fan%20or%20Motor%20Rewinding" target="_blank" rel="noopener noreferrer" class="mt-6 text-xs font-bold text-amber-400 hover:text-white flex items-center gap-1.5 transition-colors">
+            <span>Book Motor Service →</span>
+          </a>
+        </article>
+
+        <!-- Service 3: House & Commercial Wiring -->
+        <article class="glass-card p-7 rounded-2xl flex flex-col justify-between group transition-transform duration-200 hover:-translate-y-1">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-emerald-400 mb-5 text-xl font-bold">
+              🏠
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Complete Building Wiring</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed mb-4">
+              Full electrification for homes, commercial complexes, and retail stores. Clean distribution board assembly, MCB sizing, and load balancing.
+            </p>
+            <ul class="text-xs text-zinc-300 space-y-2 border-t border-zinc-800/80 pt-4">
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Concealed &amp; open wall conduit wiring</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> MCB, RCCB, and surge protection</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Modular switch plates &amp; AC point cabling</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/919876543210?text=Hi%20Basava,%20I%20need%20Building%20Wiring" target="_blank" rel="noopener noreferrer" class="mt-6 text-xs font-bold text-emerald-400 hover:text-white flex items-center gap-1.5 transition-colors">
+            <span>Request Wiring Plan →</span>
+          </a>
+        </article>
+
+        <!-- Service 4: Underground & Utility Trenching -->
+        <article class="glass-card p-7 rounded-2xl flex flex-col justify-between group transition-transform duration-200 hover:-translate-y-1">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-zinc-200 mb-5 text-xl font-bold">
+              ⚡
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Underground Utility Laying</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed mb-4">
+              Deep trenching and high-impact pipe installation for main power entry cables, generator feed lines, and industrial machinery conduits.
+            </p>
+            <ul class="text-xs text-zinc-300 space-y-2 border-t border-zinc-800/80 pt-4">
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Heavy schedule underground PVC protection</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Chemical earthing &amp; ground resistance pits</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Armored cable pull routing</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/919876543210?text=Hi%20Basava,%20I%20need%20Underground%20Cabling%20and%20Earthing" target="_blank" rel="noopener noreferrer" class="mt-6 text-xs font-bold text-zinc-200 hover:text-white flex items-center gap-1.5 transition-colors">
+            <span>Discuss Grounding →</span>
+          </a>
+        </article>
+
+        <!-- Service 5: Inverter, UPS & Battery Setup -->
+        <article class="glass-card p-7 rounded-2xl flex flex-col justify-between group transition-transform duration-200 hover:-translate-y-1">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-700 flex items-center justify-center text-purple-400 mb-5 text-xl font-bold">
+              🔋
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Inverter &amp; Power Backup</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed mb-4">
+              Seamless home and office backup power systems. We calculate your exact wattage requirement, connect dedicated inverter lines, and install battery banks.
+            </p>
+            <ul class="text-xs text-zinc-300 space-y-2 border-t border-zinc-800/80 pt-4">
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Inverter capacity &amp; battery matching</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Changeover switches &amp; bypass lines</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Solar hybrid inverter readiness</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/919876543210?text=Hi%20Basava,%20I%20need%20Inverter%20Setup" target="_blank" rel="noopener noreferrer" class="mt-6 text-xs font-bold text-purple-400 hover:text-white flex items-center gap-1.5 transition-colors">
+            <span>Inverter Consultation →</span>
+          </a>
+        </article>
+
+        <!-- Service 6: 24/7 Breakdown & Short-Circuit Repair -->
+        <article class="glass-card p-7 rounded-2xl flex flex-col justify-between group transition-transform duration-200 hover:-translate-y-1 border-red-500/30">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-red-950/60 border border-red-800/60 flex items-center justify-center text-red-400 mb-5 text-xl font-bold">
+              🚨
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Emergency Breakdown Repair</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed mb-4">
+              Immediate response for electrical short-circuits, sparking main meters, burned wires, and power failures across Rabakavi Banahatti.
+            </p>
+            <ul class="text-xs text-zinc-300 space-y-2 border-t border-zinc-800/80 pt-4">
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Multimeter &amp; insulation testing</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Emergency bypass &amp; wire replacement</li>
+              <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✔</span> Quick arrival for urgent residential calls</li>
+            </ul>
+          </div>
+          <a href="tel:+919876543210" class="mt-6 text-xs font-bold text-red-400 hover:text-white flex items-center gap-1.5 transition-colors">
+            <span>Call Emergency Dispatch Now →</span>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Real Work Gallery & Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-zinc-900/50 border-y border-zinc-800/80 scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-4">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider block mb-2">Real Jobsite Photography</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Actual Work on Sites</h2>
+          <p class="text-sm text-zinc-400 mt-2">
+            Authentic photographs of our roof casting piping, motor winding, and ground installations in Banahatti.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-10" role="tablist" aria-label="Work portfolio categories">
+          <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-black border border-white transition-colors cursor-pointer" data-filter="all">
+            All Works (7)
+          </button>
+          <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-zinc-900 text-zinc-400 border border-zinc-800 hover:text-white hover:border-zinc-700 transition-colors cursor-pointer" data-filter="slab">
+            Roof Slab Piping (4)
+          </button>
+          <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-zinc-900 text-zinc-400 border border-zinc-800 hover:text-white hover:border-zinc-700 transition-colors cursor-pointer" data-filter="motor">
+            Motor &amp; Fan Rewinding (2)
+          </button>
+          <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-zinc-900 text-zinc-400 border border-zinc-800 hover:text-white hover:border-zinc-700 transition-colors cursor-pointer" data-filter="utility">
+            Utility Trenching (1)
+          </button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Image 1: Slab 1 -->
+          <div class="gallery-card group glass-card rounded-2xl overflow-hidden cursor-pointer transition-transform duration-200 hover:-translate-y-1" data-category="slab" onclick="openLightbox('img/work_roof_slab_1.jpeg', 'Roof Slab Conduit Piping Layout', 'Precision conduit grid layout on reinforcement steel rebar before concrete slab casting.')">
+            <div class="aspect-4/3 overflow-hidden bg-zinc-900 relative">
+              <img src="img/work_roof_slab_1.jpeg" alt="Roof Slab Electrical Conduit Piping Layout in Banahatti" width="600" height="450" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out">
+              <span class="absolute top-3 left-3 px-2 py-1 rounded bg-black/80 backdrop-blur-md text-[10px] font-bold text-white border border-zinc-700">
+                Roof Slab
+              </span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-bold text-white group-hover:text-sky-400 transition-colors">Reinforcement Slab Conduit Grid</h3>
+              <p class="text-xs text-zinc-400 mt-1">Multi-room fan and downlight conduit installation before concrete pour.</p>
+            </div>
+          </div>
+
+          <!-- Image 2: Slab 2 -->
+          <div class="gallery-card group glass-card rounded-2xl overflow-hidden cursor-pointer transition-transform duration-200 hover:-translate-y-1" data-category="slab" onclick="openLightbox('img/work_roof_slab_2.jpeg', 'Slab Conduit & Junction Boxes', 'Full building roof electrical piping showing fan hook placement and drop conduits.')">
+            <div class="aspect-4/3 overflow-hidden bg-zinc-900 relative">
+              <img src="img/work_roof_slab_2.jpeg" alt="Electrical Conduit Grid on Steel Reinforcement" width="600" height="450" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out">
+              <span class="absolute top-3 left-3 px-2 py-1 rounded bg-black/80 backdrop-blur-md text-[10px] font-bold text-white border border-zinc-700">
+                Roof Slab
+              </span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-bold text-white group-hover:text-sky-400 transition-colors">Junction Box &amp; Fan Hook Placement</h3>
+              <p class="text-xs text-zinc-400 mt-1">Accurate room-by-room conduit drops into brick walls.</p>
+            </div>
+          </div>
+
+          <!-- Image 3: Slab 3 -->
+          <div class="gallery-card group glass-card rounded-2xl overflow-hidden cursor-pointer transition-transform duration-200 hover:-translate-y-1" data-category="slab" onclick="openLightbox('img/work_roof_slab_3.jpeg', 'Slab Casting Preparation, Banahatti', 'Inspection and pipe securing prior to transit mixer cement casting.')">
+            <div class="aspect-4/3 overflow-hidden bg-zinc-900 relative">
+              <img src="img/work_roof_slab_3.jpeg" alt="Electrician preparing roof slab wiring in Banahatti" width="600" height="450" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out">
+              <span class="absolute top-3 left-3 px-2 py-1 rounded bg-black/80 backdrop-blur-md text-[10px] font-bold text-white border border-zinc-700">
+                Roof Slab
+              </span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-bold text-white group-hover:text-sky-400 transition-colors">Pre-Casting Inspection &amp; Tying</h3>
+              <p class="text-xs text-zinc-400 mt-1">Binding wire ties to prevent pipe displacement during vibration.</p>
+            </div>
+          </div>
+
+          <!-- Image 4: Slab 4 -->
+          <div class="gallery-card group glass-card rounded-2xl overflow-hidden cursor-pointer transition-transform duration-200 hover:-translate-y-1" data-category="slab" onclick="openLightbox('img/work_roof_slab_4.jpeg', 'Electrician On-Site Assembly', 'Basava Electrician team routing high-gauge PVC bends across the roof.')">
+            <div class="aspect-4/3 overflow-hidden bg-zinc-900 relative">
+              <img src="img/work_roof_slab_4.jpeg" alt="Basava Electrician team at work on roof slab" width="600" height="450" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out">
+              <span class="absolute top-3 left-3 px-2 py-1 rounded bg-black/80 backdrop-blur-md text-[10px] font-bold text-white border border-zinc-700">
+                On-Site Work
+              </span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-bold text-white group-hover:text-sky-400 transition-colors">On-Site Slab Piping Execution</h3>
+              <p class="text-xs text-zinc-400 mt-1">Precision fitting with heavy PVC solvent cement joints.</p>
+            </div>
+          </div>
+
+          <!-- Image 5: Motor Winding 1 -->
+          <div class="gallery-card group glass-card rounded-2xl overflow-hidden cursor-pointer transition-transform duration-200 hover:-translate-y-1" data-category="motor" onclick="openLightbox('img/work_motor_winding_1.jpeg', 'Ceiling Fan Copper Stator Rewinding', '100% pure copper wire stator coil rewinding for high RPM ceiling fan motor.')">
+            <div class="aspect-4/3 overflow-hidden bg-zinc-900 relative">
+              <img src="img/work_motor_winding_1.jpeg" alt="Ceiling Fan Copper Stator Rewinding Work" width="600" height="450" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out">
+              <span class="absolute top-3 left-3 px-2 py-1 rounded bg-black/80 backdrop-blur-md text-[10px] font-bold text-amber-400 border border-zinc-700">
+                Coil Rewinding
+              </span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-bold text-white group-hover:text-amber-400 transition-colors">Precision Stator Coil Rewinding</h3>
+              <p class="text-xs text-zinc-400 mt-1">High-insulation copper coils wound and varnished for maximum life.</p>
+            </div>
+          </div>
+
+          <!-- Image 6: Motor Winding 2 -->
+          <div class="gallery-card group glass-card rounded-2xl overflow-hidden cursor-pointer transition-transform duration-200 hover:-translate-y-1" data-category="motor" onclick="openLightbox('img/work_motor_winding_2.jpeg', 'Fan Motor Assembled & Tested', 'Rewound ceiling fan stator tested with capacitor and shaft bearings for zero noise.')">
+            <div class="aspect-4/3 overflow-hidden bg-zinc-900 relative">
+              <img src="img/work_motor_winding_2.jpeg" alt="Ceiling Fan Motor Assembled and Tested" width="600" height="450" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out">
+              <span class="absolute top-3 left-3 px-2 py-1 rounded bg-black/80 backdrop-blur-md text-[10px] font-bold text-amber-400 border border-zinc-700">
+                Testing &amp; Assembly
+              </span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-bold text-white group-hover:text-amber-400 transition-colors">Motor Reassembly &amp; Live Test</h3>
+              <p class="text-xs text-zinc-400 mt-1">Smooth bearing rotation, zero-humming, and high air circulation.</p>
+            </div>
+          </div>
+
+          <!-- Image 7: Trenching -->
+          <div class="gallery-card group glass-card rounded-2xl overflow-hidden cursor-pointer transition-transform duration-200 hover:-translate-y-1" data-category="utility" onclick="openLightbox('img/work_trench.jpeg', 'Underground Utility & Cable Trench', 'Deep underground utility trenching and heavy PVC pipe laying for main building electricity supply.')">
+            <div class="aspect-4/3 overflow-hidden bg-zinc-900 relative">
+              <img src="img/work_trench.jpeg" alt="Underground Utility Trench and Cable Conduit Piping" width="600" height="450" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out">
+              <span class="absolute top-3 left-3 px-2 py-1 rounded bg-black/80 backdrop-blur-md text-[10px] font-bold text-sky-400 border border-zinc-700">
+                Underground Piping
+              </span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-bold text-white group-hover:text-sky-400 transition-colors">Underground Power Conduit Trench</h3>
+              <p class="text-xs text-zinc-400 mt-1">Rugged underground pipe protection for incoming 3-phase power cables.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interactive Cost Estimator Calculator -->
+    <section id="estimator" class="py-20 max-w-4xl mx-auto px-4 scroll-mt-20">
+      <div class="text-center max-w-xl mx-auto mb-10">
+        <span class="text-xs uppercase font-bold text-sky-400 tracking-wider block mb-2">Transparent Pricing</span>
+        <h2 class="text-3xl font-extrabold text-white tracking-tight">Instant Electrical Cost Estimator</h2>
+        <p class="text-xs sm:text-sm text-zinc-400 mt-2">
+          Select your requirements for a quick ballpark estimate and direct booking via WhatsApp.
+        </p>
+      </div>
+
+      <div class="glass-card p-6 sm:p-10 rounded-3xl border border-zinc-800">
+        <form id="estimate-form" class="space-y-6">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="service-type" class="block text-xs font-semibold text-zinc-300 mb-2">Service Category *</label>
+              <select id="service-type" name="service_type" class="w-full min-h-[48px] px-3.5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-sm text-white focus:outline-none focus:border-sky-400">
+                <option value="slab">Roof Slab Conduit Piping (per sq.ft)</option>
+                <option value="rewiring">Full House Wiring &amp; Fitting</option>
+                <option value="fan_motor">Ceiling Fan / Motor Coil Rewinding</option>
+                <option value="inverter">Inverter &amp; Battery Installation</option>
+                <option value="emergency">Emergency Short-Circuit Inspection</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="work-size" class="block text-xs font-semibold text-zinc-300 mb-2">Project Size / Quantity *</label>
+              <select id="work-size" name="work_size" class="w-full min-h-[48px] px-3.5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-sm text-white focus:outline-none focus:border-sky-400">
+                <option value="small">1 - 2 Rooms / Up to 600 sq.ft (Small)</option>
+                <option value="medium" selected>2 - 3 BHK / 600 - 1,500 sq.ft (Standard)</option>
+                <option value="large">4+ Rooms / Duplex / 1,500+ sq.ft (Large)</option>
+                <option value="commercial">Commercial Complex / Factory Site</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-zinc-900/90 border border-zinc-800 text-center space-y-2">
+            <span class="text-xs text-zinc-400 uppercase tracking-wider font-semibold block">Estimated Service Cost</span>
+            <div id="calculated-price" class="text-3xl sm:text-4xl font-extrabold text-white font-mono">
+              ₹2,500 – ₹4,500
+            </div>
+            <p class="text-xs text-zinc-500">
+              *Excludes heavy hardware material cost. Final quote provided after free on-site survey.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+            <div class="text-xs text-zinc-400">
+              ⚡ Includes safety compliance &amp; workmanship guarantee.
+            </div>
+            <button id="btn-send-estimate-whatsapp" type="button" class="w-full sm:w-auto min-h-[48px] px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-emerald-950 transition-transform active:scale-95 cursor-pointer">
+              <span>💬 Confirm Quote on WhatsApp</span>
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- Service Area & Coverage -->
+    <section id="service-area" class="py-16 bg-zinc-900/30 border-y border-zinc-800/80 scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="glass-card p-8 rounded-3xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <span class="text-xs uppercase font-bold text-sky-400 tracking-wider block mb-1">Local Presence</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-3">Service Coverage Locations</h2>
+            <p class="text-sm text-zinc-400 leading-relaxed mb-6">
+              We provide rapid electrical repairs and scheduled contracting across Rabakavi Banahatti and neighboring towns in Bagalkot district.
+            </p>
+            <div class="grid grid-cols-2 gap-3 text-xs font-medium text-zinc-300">
+              <div class="flex items-center gap-2 bg-zinc-900/80 p-2.5 rounded-xl border border-zinc-800">
+                <span class="text-sky-400 font-bold">📍</span> Rabakavi Banahatti
+              </div>
+              <div class="flex items-center gap-2 bg-zinc-900/80 p-2.5 rounded-xl border border-zinc-800">
+                <span class="text-sky-400 font-bold">📍</span> Jamkhandi Town
+              </div>
+              <div class="flex items-center gap-2 bg-zinc-900/80 p-2.5 rounded-xl border border-zinc-800">
+                <span class="text-sky-400 font-bold">📍</span> Mahalingpur
+              </div>
+              <div class="flex items-center gap-2 bg-zinc-900/80 p-2.5 rounded-xl border border-zinc-800">
+                <span class="text-sky-400 font-bold">📍</span> Mudhol &amp; Bagalkot
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-zinc-900 p-6 rounded-2xl border border-zinc-800 text-center space-y-4">
+            <div class="w-12 h-12 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20 flex items-center justify-center mx-auto text-xl">
+              🕒
+            </div>
+            <h3 class="text-base font-bold text-white">Operating Schedule</h3>
+            <p class="text-xs text-zinc-400">
+              Monday – Sunday: <strong class="text-zinc-200">7:00 AM – 9:00 PM</strong><br>
+              Emergency Breakdown Calls: <strong class="text-amber-400">Available 24 Hours</strong>
+            </p>
+            <a href="tel:+919876543210" class="inline-block px-5 py-2.5 rounded-xl bg-white text-black font-bold text-xs hover:bg-zinc-200 transition-colors">
+              Direct Line: +91 98765 43210
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 max-w-6xl mx-auto px-4 scroll-mt-20">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs uppercase font-bold text-amber-400 tracking-wider block mb-2">Client Satisfaction</span>
+        <h2 class="text-3xl font-extrabold text-white tracking-tight">Trusted by Homeowners &amp; Builders</h2>
+        <div class="flex items-center justify-center gap-1 text-amber-400 mt-2">
+          ★★★★★ <span class="text-xs text-zinc-400 ml-2 font-semibold">(5.0 Average Rating Across 80+ Local Reviews)</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass-card p-6 rounded-2xl space-y-3">
+          <div class="text-amber-400 text-sm">★★★★★</div>
+          <p class="text-xs text-zinc-300 leading-relaxed italic">
+            “Basava handled the entire roof slab piping for my new house in Banahatti. Not a single pipe broke or got blocked during concrete casting. Extremely neat and clean work.”
+          </p>
+          <div class="pt-2 border-t border-zinc-800/80">
+            <span class="text-xs font-bold text-white block">Ramesh Patil</span>
+            <span class="text-[11px] text-zinc-500 block">Residential House Owner, Banahatti</span>
+          </div>
+        </div>
+
+        <div class="glass-card p-6 rounded-2xl space-y-3">
+          <div class="text-amber-400 text-sm">★★★★★</div>
+          <p class="text-xs text-zinc-300 leading-relaxed italic">
+            “My 2 ceiling fans burned out due to voltage fluctuation. Basava rewound them with pure copper coils and delivered them the next morning. Works like brand new.”
+          </p>
+          <div class="pt-2 border-t border-zinc-800/80">
+            <span class="text-xs font-bold text-white block">Kiran K.</span>
+            <span class="text-[11px] text-zinc-500 block">Shop Owner, Rabakavi</span>
+          </div>
+        </div>
+
+        <div class="glass-card p-6 rounded-2xl space-y-3">
+          <div class="text-amber-400 text-sm">★★★★★</div>
+          <p class="text-xs text-zinc-300 leading-relaxed italic">
+            “Prompt emergency service at 10 PM when our main MCB tripped and started smoking. Found the short circuit in 20 minutes and restored power safely.”
+          </p>
+          <div class="pt-2 border-t border-zinc-800/80">
+            <span class="text-xs font-bold text-white block">Mallikarjun B.</span>
+            <span class="text-[11px] text-zinc-500 block">Commercial Complex, Bagalkot</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Contact Form -->
+    <section id="contact" class="py-20 bg-zinc-900/40 border-t border-zinc-800/80 scroll-mt-20">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="text-center max-w-xl mx-auto mb-12">
+          <span class="text-xs uppercase font-bold text-sky-400 tracking-wider block mb-2">Get In Touch</span>
+          <h2 class="text-3xl font-extrabold text-white tracking-tight">Book an Electrician or Request Quote</h2>
+          <p class="text-xs sm:text-sm text-zinc-400 mt-2">
+            Fill out the details below and we will contact you immediately or connect directly via WhatsApp.
+          </p>
+        </div>
+
+        <div class="glass-card p-8 rounded-3xl border border-zinc-800">
+          <form id="booking-form" class="space-y-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="contact-name" class="block text-xs font-semibold text-zinc-300 mb-2">Your Name *</label>
+                <input type="text" id="contact-name" required placeholder="e.g. Anand Kumar" class="w-full min-h-[48px] px-3.5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-sm text-white focus:outline-none focus:border-sky-400">
+              </div>
+
+              <div>
+                <label for="contact-phone" class="block text-xs font-semibold text-zinc-300 mb-2">Phone / WhatsApp Number *</label>
+                <input type="tel" id="contact-phone" required placeholder="e.g. 98765 43210" class="w-full min-h-[48px] px-3.5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-sm text-white focus:outline-none focus:border-sky-400">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="contact-location" class="block text-xs font-semibold text-zinc-300 mb-2">Your Town / Area *</label>
+                <input type="text" id="contact-location" required placeholder="e.g. Banahatti, Main Bazar" class="w-full min-h-[48px] px-3.5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-sm text-white focus:outline-none focus:border-sky-400">
+              </div>
+
+              <div>
+                <label for="contact-service" class="block text-xs font-semibold text-zinc-300 mb-2">Required Service *</label>
+                <select id="contact-service" class="w-full min-h-[48px] px-3.5 py-2.5 rounded-xl bg-zinc-900 border border-zinc-700 text-sm text-white focus:outline-none focus:border-sky-400">
+                  <option value="Roof Slab Piping">Roof Slab Conduit Piping</option>
+                  <option value="House Wiring">Complete House Wiring</option>
+                  <option value="Motor Coil Rewinding">Ceiling Fan / Motor Rewinding</option>
+                  <option value="Emergency Repair">Emergency Short-Circuit Repair</option>
+                  <option value="Inverter / Solar">Inverter &amp; Backup Installation</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="contact-notes" class="block text-xs font-semibold text-zinc-300 mb-2">Project Details / Description (Optional)</label>
+              <textarea id="contact-notes" rows="3" placeholder="Describe the problem or project size…" class="w-full p-3.5 rounded-xl bg-zinc-900 border border-zinc-700 text-sm text-white focus:outline-none focus:border-sky-400"></textarea>
+            </div>
+
+            <button type="submit" class="w-full min-h-[48px] py-3.5 rounded-xl bg-white hover:bg-zinc-200 text-black font-extrabold text-sm uppercase tracking-wider transition-transform active:scale-98 shadow-xl shadow-white/10 cursor-pointer">
+              Send Inquiry via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal for Photo Gallery -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4" onclick="closeLightbox(event)">
+    <div class="glass-card max-w-3xl w-full rounded-2xl overflow-hidden border border-zinc-700 relative" onclick="event.stopPropagation()">
+      <button type="button" onclick="closeLightbox()" aria-label="Close lightbox dialog" class="absolute top-3 right-3 w-10 h-10 rounded-full bg-black/70 text-white flex items-center justify-center border border-zinc-700 hover:bg-black transition-colors z-10 cursor-pointer">
+        ✕
+      </button>
+      <div class="aspect-16/10 bg-black flex items-center justify-center">
+        <img id="lightbox-img" src="" alt="" class="max-h-[70vh] w-auto max-w-full object-contain">
+      </div>
+      <div class="p-5 bg-zinc-950 border-t border-zinc-800">
+        <h3 id="lightbox-title" class="text-base font-bold text-white"></h3>
+        <p id="lightbox-desc" class="text-xs text-zinc-400 mt-1"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-zinc-800 text-zinc-400 text-xs py-14">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+      
+      <!-- Brand column -->
+      <div class="space-y-3 md:col-span-2">
+        <div class="flex items-center gap-3">
+          <img src="img/logo.jpg" alt="Basava Electrician" width="40" height="40" class="w-10 h-10 rounded-full border border-zinc-700 object-cover">
+          <span class="text-base font-bold text-white">Basava Electrician</span>
+        </div>
+        <p class="text-xs text-zinc-400 max-w-md leading-relaxed">
+          Reliable, safety-certified electrical contractor serving Rabakavi Banahatti, Jamkhandi, and Bagalkot district. Precision roof slab conduit piping and motor rewinding.
+        </p>
+        <div class="pt-2">
+          <a href="https://www.instagram.com/basav_electrician/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sky-400 hover:text-white transition-colors font-semibold">
+            <span>📷 Instagram: @basav_electrician</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="space-y-2">
+        <h4 class="text-xs uppercase font-bold text-white tracking-wider mb-3">Navigation</h4>
+        <div><a href="#services" class="hover:text-white transition-colors">Services Matrix</a></div>
+        <div><a href="#portfolio" class="hover:text-white transition-colors">Work Gallery</a></div>
+        <div><a href="#estimator" class="hover:text-white transition-colors">Cost Estimator</a></div>
+        <div><a href="#service-area" class="hover:text-white transition-colors">Service Area</a></div>
+        <div><a href="#contact" class="hover:text-white transition-colors">Emergency Call</a></div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="space-y-2">
+        <h4 class="text-xs uppercase font-bold text-white tracking-wider mb-3">Direct Contact</h4>
+        <div class="text-zinc-300">📞 +91 98765 43210</div>
+        <div class="text-zinc-300">💬 WhatsApp Available</div>
+        <div class="text-zinc-400 mt-2">📍 Rabakavi Banahatti, Karnataka 587311</div>
+      </div>
+
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 pt-8 border-t border-zinc-900 flex flex-wrap items-center justify-between gap-4 text-[11px] text-zinc-600">
+      <div>&copy; 2026 Basava Electrician. All Rights Reserved.</div>
+      <div>Designed with Vercel Web Interface Guidelines &amp; Tailwind CSS v4.</div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript logic -->
+  <script>
+    // Mobile navigation toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+    if (mobileBtn && mobileNav) {
+      mobileBtn.addEventListener('click', () => {
+        const isHidden = mobileNav.classList.toggle('hidden');
+        mobileBtn.setAttribute('aria-expanded', !isHidden);
+      });
+      // Close on link click
+      mobileNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileNav.classList.add('hidden');
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // Portfolio Category Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryCards = document.querySelectorAll('.gallery-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Toggle active button style
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-white', 'text-black', 'border-white');
+          b.classList.add('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
+        });
+        btn.classList.add('bg-white', 'text-black', 'border-white');
+        btn.classList.remove('bg-zinc-900', 'text-zinc-400', 'border-zinc-800');
+
+        const filter = btn.getAttribute('data-filter');
+        galleryCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Lightbox modal handler
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxDesc = document.getElementById('lightbox-desc');
+
+    function openLightbox(src, title, desc) {
+      lightboxImg.src = src;
+      lightboxImg.alt = title;
+      lightboxTitle.textContent = title;
+      lightboxDesc.textContent = desc;
+      lightboxModal.classList.remove('hidden');
+      lightboxModal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      lightboxModal.classList.add('hidden');
+      lightboxModal.classList.remove('flex');
+      lightboxImg.src = '';
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cost Estimator calculation
+    const serviceType = document.getElementById('service-type');
+    const workSize = document.getElementById('work-size');
+    const priceDisplay = document.getElementById('calculated-price');
+    const whatsappEstimateBtn = document.getElementById('btn-send-estimate-whatsapp');
+
+    const pricingTable = {
+      slab: { small: '₹1,500 – ₹2,500', medium: '₹2,500 – ₹4,500', large: '₹4,500 – ₹8,000', commercial: '₹8,000 – ₹18,000' },
+      rewiring: { small: '₹3,000 – ₹5,000', medium: '₹6,000 – ₹12,000', large: '₹12,000 – ₹25,000', commercial: 'Custom On-Site Quote' },
+      fan_motor: { small: '₹350 – ₹550', medium: '₹650 – ₹1,200', large: '₹1,500 – ₹3,000', commercial: '₹3,500 – ₹7,000' },
+      inverter: { small: '₹800 – ₹1,200', medium: '₹1,500 – ₹2,500', large: '₹2,500 – ₹4,500', commercial: '₹5,000 – ₹10,000' },
+      emergency: { small: '₹300 – ₹500', medium: '₹500 – ₹900', large: '₹800 – ₹1,500', commercial: '₹1,500 – ₹3,000' }
+    };
+
+    function updateEstimate() {
+      const s = serviceType.value;
+      const sz = workSize.value;
+      const price = (pricingTable[s] && pricingTable[s][sz]) ? pricingTable[s][sz] : '₹2,000 – ₹4,000';
+      priceDisplay.textContent = price;
+    }
+
+    if (serviceType && workSize) {
+      serviceType.addEventListener('change', updateEstimate);
+      workSize.addEventListener('change', updateEstimate);
+    }
+
+    if (whatsappEstimateBtn) {
+      whatsappEstimateBtn.addEventListener('click', () => {
+        const sText = serviceType.options[serviceType.selectedIndex].text;
+        const szText = workSize.options[workSize.selectedIndex].text;
+        const est = priceDisplay.textContent.trim();
+        const msg = encodeURIComponent(`Hello Basava Electrician,
+I would like an estimate for:
+- Service: ${sText}
+- Size: ${szText}
+- Estimated Price Range: ${est}
+Please let me know your availability for site inspection.`);
+        window.open(`https://wa.me/919876543210?text=${msg}`, '_blank');
+      });
+    }
+
+    // Direct booking form submission to WhatsApp
+    const bookingForm = document.getElementById('booking-form');
+    if (bookingForm) {
+      bookingForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('contact-name').value.trim();
+        const phone = document.getElementById('contact-phone').value.trim();
+        const loc = document.getElementById('contact-location').value.trim();
+        const srv = document.getElementById('contact-service').value;
+        const notes = document.getElementById('contact-notes').value.trim();
+
+        const text = encodeURIComponent(`*New Electrical Service Booking*
+- Name: ${name}
+- Phone: ${phone}
+- Location: ${loc}
+- Service Needed: ${srv}
+- Description: ${notes || 'N/A'}`);
+        window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
+      });
+    }
+  </script>
+</body>
+</html>
